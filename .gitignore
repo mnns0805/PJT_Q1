@@ -1,0 +1,95 @@
+# Unreal Engine auto-generated folders and files
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# Ignore built engine folders if using source version
+Engine/Binaries/
+Engine/DerivedDataCache/
+Engine/Intermediate/
+Engine/Saved/
+
+# Ignore user-specific files
+*.user
+*.userprefs
+*.suo
+*.opensdf
+*.sdf
+*.ipdb
+*.iobj
+
+# Ignore compiled DLLs and executables
+*.pdb
+*.exe
+*.dll
+*.lib
+*.app
+*.dSYM/
+*.apk
+*.xcodeproj
+*.xcworkspace
+*.xcuserdata
+
+# Ignore logs and crash report files
+*.log
+*.dmp
+*.dump
+*.mdmp
+
+# Ignore IDE/project files (Visual Studio, Rider, VS Code, Xcode)
+.vs/
+.idea/
+.vscode/
+*.VC.db
+*.VC.opendb
+*.code-workspace
+*.sln
+
+# Ignore build output
+*.obj
+*.o
+*.so
+*.class
+
+# Ignore temporary/backup files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Ignore Mac system files
+.DS_Store
+
+# Ignore Python cache
+__pycache__/
+*.pyc
+
+# Ignore custom build scripts output
+Build/
+
+# Ignore any auto-generated or local config files you don't want to track
+*.local
+
+# Optionally ignore plugin binaries/intermediate if you use UE plugins
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+```
+
+---
+
+### 설명 및 팁
+
+- `Binaries/`, `Intermediate/`, `Saved/`, `DerivedDataCache/` 등은 Unreal에서 자동으로 생성되며 소스 관리에 불필요합니다.
+- C++ 프로젝트의 경우 `.vs/`, `*.sln` (Visual Studio 솔루션/설정 관련) 역시 제외해야 합니다.
+- IDE 별로 자동 생성되는 설정 파일(`.idea/`, `.vscode/` 등)도 무시하는 게 좋습니다.
+- 이 파일은 프로젝트의 최상위 루트(즉, `[프로젝트명].uproject`가 위치한 곳)에 저장해야 합니다.
+
+---
+
+### 추가 안내
+
+- 팀 단위로 작업할 때는 이 파일을 미리 추가해야 충돌이나 필요 없는 파일 관리로 인한 문제를 방지할 수 있습니다.
+- 만약 이미 커밋된 불필요 파일이 있다면, `.gitignore` 추가 후 `git rm --cached [파일명/폴더명]` 명령으로 인덱스에서 제거해 주세요.
+
+궁금한 점이 있으면 언제든지 추가로 질문해 주세요!
