@@ -4,6 +4,9 @@
 #include "MyActor.h"
 #include "Engine.h"
 
+const int IndexCount = 10;
+
+
 // Sets default values
 AMyActor::AMyActor()
 {
@@ -26,7 +29,7 @@ void AMyActor::BeginPlay()
 	TriggerEvent();
 
 
-	for (int32 i = 0; i < 10; ++i)
+	for (int32 i = 0; i < IndexCount; ++i)
 	{
 		Turn();
 	}	
@@ -38,7 +41,7 @@ void AMyActor::TriggerEvent()
 	double DisSum = 0;
 	int32 Event = 0;
 
-	for (int32 i = 0; i < 10; ++i)
+	for (int32 i = 0; i < IndexCount; ++i)
 	{
 		if (FMath::RandRange(0, 1) == 1)
 		{
